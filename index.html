@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <!-- Fixed viewport for desktop only as requested? Or standard width=device-width?
+         User said "Desktop only (content max width 1200px)". Usually responsive is better, but wireframe might be strict.
+         I'll stick to standard viewport but ensure the CSS container handles the width. -->
+    <title>大面建設株式会社 | トップページ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">大面建設株式会社</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="businessops.html">事業案内</a></li>
+                    <li><a href="company.html">会社案内</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="header-info">
+                    <a href="tel:0552537670" class="header-phone">055-253-7670</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Visual -->
+    <section class="top-mv">
+        <div class="mv-copy">
+            <h2>街をつくる、未来を拓く</h2>
+            <p>確かな技術で、安心安全な社会基盤を支えます。</p>
+        </div>
+        <!-- Background is styled via CSS on .top-mv (gray bg) -->
+    </section>
+
+    <!-- Business News (3 cols, 2 rows) -->
+    <section class="container mb-80">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <h2>最新のお知らせ</h2>
+            <a href="#" class="btn">一覧を見る</a>
+        </div>
+        <div class="card-grid cols-3">
+            <!-- 6 items -->
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2024.01.15</div>
+                    <h3>施工実績を更新しました</h3>
+                </div>
+            </article>
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2024.01.10</div>
+                    <h3>新規事業の開始について</h3>
+                </div>
+            </article>
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2023.12.28</div>
+                    <h3>年末年始休業のお知らせ</h3>
+                </div>
+            </article>
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2023.12.15</div>
+                    <h3>社内研修による臨時休業</h3>
+                </div>
+            </article>
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2023.11.30</div>
+                    <h3>地域清掃活動を行いました</h3>
+                </div>
+            </article>
+            <article class="card">
+                <div class="img-placeholder landscape">List Image</div>
+                <div class="card-body">
+                    <div class="post-meta">2023.11.01</div>
+                    <h3>採用情報を更新しました</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Guide Links (Business & Recruitment) -->
+    <section class="container mb-80">
+        <div class="guide-links">
+            <a href="businessops.html" class="guide-link-item">
+                <h2>事業案内</h2>
+                <p>私たちの仕事について詳しく見る &rarr;</p>
+            </a>
+            <a href="recruit.html" class="guide-link-item">
+                <h2>採用情報</h2>
+                <p>一緒に働く仲間を募集しています &rarr;</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Instagram Timeline (4 cols, 4 rows = 16 items) -->
+    <section class="container mb-80">
+        <h2 class="text-center">Instagram</h2>
+        <div class="card-grid cols-4">
+            <!-- 16 squares -->
+            <div class="img-placeholder square">Insta 1</div>
+            <div class="img-placeholder square">Insta 2</div>
+            <div class="img-placeholder square">Insta 3</div>
+            <div class="img-placeholder square">Insta 4</div>
+            <div class="img-placeholder square">Insta 5</div>
+            <div class="img-placeholder square">Insta 6</div>
+            <div class="img-placeholder square">Insta 7</div>
+            <div class="img-placeholder square">Insta 8</div>
+            <div class="img-placeholder square">Insta 9</div>
+            <div class="img-placeholder square">Insta 10</div>
+            <div class="img-placeholder square">Insta 11</div>
+            <div class="img-placeholder square">Insta 12</div>
+            <div class="img-placeholder square">Insta 13</div>
+            <div class="img-placeholder square">Insta 14</div>
+            <div class="img-placeholder square">Insta 15</div>
+            <div class="img-placeholder square">Insta 16</div>
+        </div>
+        <div class="text-center" style="margin-top: 24px;">
+            <a href="#" class="btn">Instagramを見る</a>
+        </div>
+    </section>
+
+    <!-- Pre-footer CTA -->
+    <section class="container mb-80 cta-section">
+        <div class="cta-inner text-center"
+            style="background: var(--color-gray-light); padding: 40px; border: 1px solid #ddd;">
+            <h2 class="mb-40">お問い合わせ</h2>
+            <p class="mb-40">お仕事のご相談や採用について、お気軽にお問い合わせください。</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="tel:0552537670" class="btn"
+                    style="min-width: 250px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fa-solid fa-phone"></i> 055-253-7670
+                </a>
+                <a href="contact.html" class="btn primary"
+                    style="min-width: 250px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <i class="fa-regular fa-envelope"></i> お問い合わせフォーム
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>大面建設株式会社</h3>
+                    <p>〒400-0026<br>山梨県甲府市塩部三丁目２番８号</p>
+                    <p>TEL. 055-253-7670 / FAX. 055-253-7664</p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="businessops.html">事業案内</a></li>
+                        <li><a href="company.html">会社案内</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Otsura-Kensetsu　Co.ltd all rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

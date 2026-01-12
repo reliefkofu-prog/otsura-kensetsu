@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <title>お問い合わせ | 大面建設株式会社</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">大面建設株式会社</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="businessops.html">事業案内</a></li>
+                    <li><a href="company.html">会社案内</a></li>
+                    <li><a href="recruit.html">採用情報</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="header-info">
+                    <a href="tel:0552537670" class="header-phone">055-253-7670</a>
+                </div>
+                <!-- Contact button removed -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title / Content Header -->
+    <div class="page-title-header">
+        <div class="page-title-overlay"></div>
+        <div class="page-title-content">
+            <h1>お問い合わせ</h1>
+        </div>
+    </div>
+
+    <!-- Phone Inquiry -->
+    <section class="container mb-80">
+        <div class="contact-phone text-center"
+            style="background: var(--color-gray-light); padding: 40px; border: 1px solid #ddd;">
+            <h2 class="mb-20">お電話でのお問い合わせ</h2>
+            <p style="font-size: 32px; font-weight: 700;">055-253-7670</p>
+            <p style="font-size: 14px; color: var(--text-sub);">受付時間：平日 8:00〜17:00</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container mb-80">
+        <h2 class="text-center mb-40">お問い合わせフォーム</h2>
+        <p class="text-center mb-40">
+            下記のフォームより必要事項をご入力の上、送信してください。<br>
+            採用に関するお問い合わせもこちらから受け付けております。
+        </p>
+
+        <form action="#" method="post" style="max-width: 800px; margin: 0 auto;">
+            <div class="form-group">
+                <label class="form-label">お問い合わせ項目 <span style="color:red">*</span></label>
+                <div style="display: flex; gap: 20px;">
+                    <label style="display: flex; align-items: center; gap: 5px;">
+                        <input type="radio" name="type" value="construction" checked> 工事・施工に関するお問い合わせ
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 5px;">
+                        <input type="radio" name="type" value="recruit"> 採用に関するお問い合わせ
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">会社名・団体名</label>
+                <input type="text" class="form-control" placeholder="例：株式会社〇〇">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">お名前 <span style="color:red">*</span></label>
+                <input type="text" class="form-control" placeholder="例：大面 太郎">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">メールアドレス <span style="color:red">*</span></label>
+                <input type="email" class="form-control" placeholder="例：example@ohmo.co.jp">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">電話番号 <span style="color:red">*</span></label>
+                <input type="tel" class="form-control" placeholder="例：090-1234-5678">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">ご住所</label>
+                <input type="text" class="form-control" placeholder="例：〇〇県〇〇市〇〇町1-1-1">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">お問い合わせ内容 <span style="color:red">*</span></label>
+                <textarea class="form-control" rows="8" placeholder="お問い合わせ内容をご入力ください"></textarea>
+            </div>
+
+            <div class="form-group" style="background: var(--color-gray-light); padding: 20px; font-size: 14px;">
+                <label class="form-label">個人情報の取り扱いについて <span style="color:red">*</span></label>
+                <p class="mb-20">
+                    ご入力いただきました個人情報は、お問い合わせへの回答および対応上必要な手続きにのみ利用し、
+                    当社のプライバシーポリシーに従って適切に管理いたします。
+                </p>
+                <label style="display: flex; align-items: center; gap: 8px; font-weight: 700;">
+                    <input type="checkbox" required> 個人情報の取り扱いに同意する
+                </label>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <button type="submit" class="btn primary" style="width: 300px;">送信する</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Pre-footer CTA removed -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>大面建設株式会社</h3>
+                    <p>〒400-0026<br>山梨県甲府市塩部三丁目２番８号</p>
+                    <p>TEL. 055-253-7670 / FAX. 055-253-7664</p>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="businessops.html">事業案内</a></li>
+                        <li><a href="company.html">会社案内</a></li>
+                        <li><a href="recruit.html">採用情報</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                Otsura-Kensetsu　Co.ltd all rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
