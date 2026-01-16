@@ -52,10 +52,16 @@
     </section>
 
     <!-- Message / Greeting -->
+    <!-- Leadership Messages -->
     <section class="container mb-80">
-        <h2 class="text-center mb-40">代表メッセージ</h2>
-        <div style="display: flex; gap: 40px; align-items: flex-start; justify-content: center;">
-            <div style="width: 100%; max-width: 800px;">
+        <div class="img-placeholder" style="width: 600px; height: 400px; margin: 0 auto 60px auto;">代表・常務 写真</div>
+
+        <div class="message-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+            <!-- Representative Message -->
+            <div>
+                <h2 class="mb-20"
+                    style="font-size: 24px; border-bottom: 2px solid var(--color-primary); padding-bottom: 10px;">
+                    代表挨拶</h2>
                 <p class="mb-20">
                     弊社は土木工事の施工会社として創業し、以来、上下水道工事道路工事、公園施設工事、標識工事等　インフラ整備の担い手の一員として営業してまいりました。<br>
                     社会のニーズの変化に伴い、建設産業は新時代を迎え、大量生産・大量消費の時代は終焉を迎え、良いものを適正な価格で提供することが企業に課せられる課題となってまいりました。<br>
@@ -68,14 +74,12 @@
                     代表取締役　大面　護
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Executive Director Greeting -->
-    <section class="container mb-80">
-        <h2 class="text-center mb-40">常務メッセージ</h2>
-        <div style="display: flex; gap: 40px; align-items: flex-start; justify-content: center;">
-            <div style="width: 100%; max-width: 800px;">
+            <!-- Managing Director Message -->
+            <div>
+                <h2 class="mb-20"
+                    style="font-size: 24px; border-bottom: 2px solid var(--color-primary); padding-bottom: 10px;">
+                    常務挨拶</h2>
                 <p class="mb-20">
                     （ここに常務挨拶のテキストが入ります。）
                 </p>
@@ -84,6 +88,14 @@
                 </div>
             </div>
         </div>
+
+        <style>
+            @media (max-width: 768px) {
+                .message-grid {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+        </style>
     </section>
 
     <!-- Company Outline -->
