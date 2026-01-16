@@ -31,6 +31,66 @@
             border-bottom: 2px solid var(--color-gray-medium);
             padding-bottom: 10px;
         }
+
+        /* Work Step Styles */
+        /* Work Flow Styles - 2 Column */
+        .work-flow-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .work-flow-heading {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--color-black);
+            padding-left: 15px;
+        }
+
+        .work-flow-item {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .work-flow-item:last-child {
+            border-bottom: none;
+        }
+
+        .work-flow-img {
+            width: 400px;
+            flex-shrink: 0;
+        }
+
+        .work-flow-info {
+            flex: 1;
+        }
+
+        .work-flow-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .work-flow-desc {
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .work-flow-item {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .work-flow-img {
+                width: 100%;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -101,31 +161,31 @@
         <h2 class="text-center mb-40">大面建設の10の特徴</h2>
         <div class="feature-grid">
             <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="feature-content">
+                    <div class="feature-title">顧客は「国・警察・山梨県」</div>
+                    <div class="feature-desc">公的機関が主な顧客のため、事業の安定性があります。</div>
+                </div>
+            </div>
+            <div class="feature-item">
                 <div class="feature-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">有給取得率90％以上</div>
+                    <div class="feature-title">有給取得率ほぼ100％</div>
                     <div class="feature-desc">休みが取りやすくアットホームな職場。プライベートも充実。</div>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-gears"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">力に自信がなくてもOK！</div>
-                    <div class="feature-desc">ほとんどの作業は重労働ではなく、機械を使います。</div>
+                    <div class="feature-title">資格取得、全面サポート</div>
+                    <div class="feature-desc">費用の負担や、実技などの社内指導も手厚く行います。</div>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-regular fa-clock"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-helmet-safety"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">残業は1日5分以下</div>
-                    <div class="feature-desc">平均残業時間は建設業界でも極めて少ない水準です。</div>
-                </div>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
-                <div class="feature-content">
-                    <div class="feature-title">「残業しない人」が優秀</div>
-                    <div class="feature-desc">時間内に効率よく仕事を終わらせる人を評価します。</div>
+                    <div class="feature-title">何より安全を最優先</div>
+                    <div class="feature-desc">危険予知活動の徹底と無理な作業の禁止を徹底しています。</div>
                 </div>
             </div>
             <div class="feature-item">
@@ -136,10 +196,10 @@
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="feature-icon"><i class="fa-regular fa-clock"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">創業70年の信頼</div>
-                    <div class="feature-desc">地元・山梨で長年積み上げてきた安定した経営基盤。</div>
+                    <div class="feature-title">残業は1日5分以下</div>
+                    <div class="feature-desc">平均残業時間は業界でも極めて少ない水準です。</div>
                 </div>
             </div>
             <div class="feature-item">
@@ -150,24 +210,24 @@
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">資格取得サポート</div>
-                    <div class="feature-desc">費用の負担や、実技などの社内指導も手厚く行います。</div>
+                    <div class="feature-title">創業70年の信頼</div>
+                    <div class="feature-desc">地元・山梨で長年積み上げてきた安定した経営基盤。</div>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-gears"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">何より安全が最優先</div>
-                    <div class="feature-desc">危険予知活動の徹底と無理な作業の禁止を徹底しています。</div>
+                    <div class="feature-title">力に自信がなくてもOK！</div>
+                    <div class="feature-desc">ほとんどの作業は重労働ではなく、機械を使います。</div>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
                 <div class="feature-content">
-                    <div class="feature-title">顧客は「警察や山梨県」</div>
-                    <div class="feature-desc">公的機関が主な顧客のため、事業の安定性があります。</div>
+                    <div class="feature-title">「残業しない人」が優秀</div>
+                    <div class="feature-desc">時間内に効率よく仕事を終わらせる人を評価します。</div>
                 </div>
             </div>
         </div>
@@ -179,11 +239,88 @@
 
         <article class="job-card">
             <div class="job-photos">
+                <div class="img-placeholder landscape">作業風景5</div>
+                <div class="img-placeholder landscape">作業風景6</div>
+            </div>
+            <div class="job-body">
+                <h3>区画線・道路標示の施工</h3>
+                <p>道路の白線（区画線）や「止まれ」などの道路標示を描く工事です。専用の機械や塗料を使用し、視認性の高いきれいなラインを引きます。私たちの会社では、この区画線・道路標示の施工を中心に仕事をしています。交通ルールの基盤を作る、専門性の高い技術職です。
+                </p>
+
+                <!-- Detailed Workflow -->
+                <div class="work-flow-container">
+                    <h4 class="work-flow-heading">仕事の流れ</h4>
+
+                    <div class="work-flow-item">
+                        <div class="work-flow-img">
+                            <div class="img-placeholder landscape" style="height: auto; aspect-ratio: 4/3;">写真</div>
+                        </div>
+                        <div class="work-flow-info">
+                            <h5 class="work-flow-title">STEP-1 機械と材料の準備</h5>
+                            <p class="work-flow-desc">
+                                当日の作業内容に合わせて、塗料（ライン材）や反射材、機械・道具をそろえ、すぐ施工できる状態に整えます。安全面もここでしっかり確認し、道具の使い方や注意点は先輩が現場で丁寧に教えます。いきなり一人で任せることはありません。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-flow-item">
+                        <div class="work-flow-img">
+                            <div class="img-placeholder landscape" style="height: auto; aspect-ratio: 4/3;">写真</div>
+                        </div>
+                        <div class="work-flow-info">
+                            <h5 class="work-flow-title">STEP-2 線を引く位置の下書き</h5>
+                            <p class="work-flow-desc">
+                                図面や指示に合わせて、線や文字を入れる場所に目印をつけ、まっすぐ・同じ幅で仕上がるように位置を決めます。最初は先輩と一緒に作業し、迷いやすいポイントもその場で確認できるので安心です。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-flow-item">
+                        <div class="work-flow-img">
+                            <div class="img-placeholder landscape" style="height: auto; aspect-ratio: 4/3;">写真</div>
+                        </div>
+                        <div class="work-flow-info">
+                            <h5 class="work-flow-title">STEP-3 機械で線・文字・マークを描く</h5>
+                            <p class="work-flow-desc">
+                                専用の機械を使って、区画線や停止線、文字、矢印などを路面に施工します。重い作業ばかりではなく、機械を使って進める仕事が中心です。操作は手順があるので、基本から順番に練習しながら覚えられます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-flow-item">
+                        <div class="work-flow-img">
+                            <div class="img-placeholder landscape" style="height: auto; aspect-ratio: 4/3;">写真</div>
+                        </div>
+                        <div class="work-flow-info">
+                            <h5 class="work-flow-title">STEP-4 乾き具合と仕上がりをチェック</h5>
+                            <p class="work-flow-desc">
+                                乾燥を確認し、にじみ・欠け・曲がりがないか、見え方に問題がないかをチェックします。仕上がり確認も先輩と一緒に行い、基準や見方をその都度学べます。安全確認も含めて、最後まで気を抜かない進め方を徹底しています。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="work-flow-item">
+                        <div class="work-flow-img">
+                            <div class="img-placeholder landscape" style="height: auto; aspect-ratio: 4/3;">写真</div>
+                        </div>
+                        <div class="work-flow-info">
+                            <h5 class="work-flow-title">STEP-5 作業報告書の作成</h5>
+                            <p class="work-flow-desc">
+                                施工内容と範囲を写真とあわせて記録し、作業報告書としてまとめます。書き方はフォーマットがあり、最初は見本を見ながらでOK。分からないところは先輩がチェックしながら教えるので、未経験でも安心して取り組めます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="job-card">
+            <div class="job-photos">
                 <div class="img-placeholder landscape">作業風景1</div>
                 <div class="img-placeholder landscape">作業風景2</div>
             </div>
             <div class="job-body">
-                <h3>案内標識の設置</h3>
+                <h3>標識の設置</h3>
                 <p>道路利用者に目的地や経路などの情報を伝える案内標識の設置工事を行います。基礎の設置から標識板の取り付けまで、正確かつ安全に施工します。道案内として多くの人の役に立つ仕事です。</p>
             </div>
         </article>
@@ -198,60 +335,9 @@
                 <p>見通しの悪い場所へのカーブミラー設置や、歩行者・車両を守るガードパイプの設置・交換工事を行います。地域の交通安全に直結する重要な役割を担っており、完了後の達成感も大きいです。</p>
             </div>
         </article>
-
-        <article class="job-card">
-            <div class="job-photos">
-                <div class="img-placeholder landscape">作業風景5</div>
-                <div class="img-placeholder landscape">作業風景6</div>
-            </div>
-            <div class="job-body">
-                <h3>区画線・道路標示の施工</h3>
-                <p>道路の白線（区画線）や「止まれ」などの道路標示を描く工事です。専用の機械や塗料を使用し、視認性の高いきれいなラインを引きます。交通ルールの基盤を作る、専門性の高い技術職です。</p>
-            </div>
-        </article>
     </section>
 
-    <!-- Daily Flow -->
-    <section class="container mb-80">
-        <h2 class="text-center mb-40">1日の流れ</h2>
-        <div class="step-list" style="max-width: 800px; margin: 0 auto;">
-            <div class="step-item">
-                <div class="step-time">8:00</div>
-                <div class="step-content">
-                    <h4>朝礼・作業開始</h4>
-                    <p>現場に集合し、当日の作業内容や安全注意事項を確認します。その後、作業を開始します。</p>
-                </div>
-            </div>
-            <div class="step-item">
-                <div class="step-time">10:00</div>
-                <div class="step-content">
-                    <h4>休憩（30分）</h4>
-                    <p>作業の合間に休憩をとり、リフレッシュします。</p>
-                </div>
-            </div>
-            <div class="step-item">
-                <div class="step-time">12:00</div>
-                <div class="step-content">
-                    <h4>お昼休憩（60分）</h4>
-                    <p>昼食をとり、午後の作業に備えてしっかりと休憩します。</p>
-                </div>
-            </div>
-            <div class="step-item">
-                <div class="step-time">15:00</div>
-                <div class="step-content">
-                    <h4>休憩（30分）</h4>
-                    <p>午後の休憩です。</p>
-                </div>
-            </div>
-            <div class="step-item">
-                <div class="step-time">17:00</div>
-                <div class="step-content">
-                    <h4>作業終了・片付け</h4>
-                    <p>作業現場の清掃や工具の片付けを行い、業務終了です。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Atmosphere / Gallery -->
     <section class="container mb-80">
